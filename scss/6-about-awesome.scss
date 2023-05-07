@@ -1,0 +1,64 @@
+#about-awesome{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 70px 150px;
+  
+    h1{
+      @include heading-black();
+    }
+    
+    hr{
+      width: 60px;
+      border: none;
+      height: 2px;
+      background: var(--color-orange)
+    }
+
+    p{
+      @include text-style();
+      color: var(--color-text-grey);
+    }
+  
+    .benefits{
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      margin-top: 30px;
+  
+      .benefit{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+  
+        p{
+          @include text-style();
+          color: var(--color-text-grey)
+        }
+  
+        .icon{
+          display: flex;
+          justify-content: center;
+  
+          i{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-orange);
+            border: 1px solid var(--color-orange);
+            border-radius: 100%;
+          }
+        }
+  
+        h4{
+          @include text-names()
+        }
+      }
+    }
+  }

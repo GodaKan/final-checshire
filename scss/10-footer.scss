@@ -1,0 +1,32 @@
+footer{
+    display:  flex;
+    background: black;
+    height: 120px;
+
+    .main{
+      // max-width: 1500px;
+      margin: 25px 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    
+
+      .icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+  
+        a {
+          color: var(--color-orange);
+        }
+    }
+    p{
+      @include text-style;
+      color: var(--color-text-grey);
+    }
+
+    }
+
+    }

@@ -1,0 +1,31 @@
+#social{
+        
+    .main{
+      max-width: 1500px;
+      margin: 25px 150px;
+      display: flex;
+      justify-content: space-between;
+  
+    article{
+      max-width: 500px;
+      
+      p{
+        @include text-style
+      }
+    }
+    .icons{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+      max-width: 400px;
+      margin-left: 50px;
+
+      a {
+        color: var(--color-orange);
+        opacity: 0.65;
+      }
+    }
+    }
+
+}
