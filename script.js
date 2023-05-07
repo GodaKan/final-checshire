@@ -27,3 +27,11 @@ function showTab(evt, id) {
     evt.currentTarget.classList.add("selected")
 
 }
+
+const burger = document.getElementById("burger")
+const links = document.querySelector(".links")
+
+burger.addEventListener("click", function(){
+    this.classList.toggle("rotate")
+    links.classList.toggle("absolute")
+})

@@ -1,28 +1,117 @@
 @media (max-width: 760px){
 
+// HEADER
 
-// INTRO MEDIA
+header{
 
-#intro{      
+  a{
+    z-index: 100;
+  }
+
+    img{
+      margin-left: 50px;
+      width: 80px;
+    }
+
+  nav{
+    margin-right: 50px;
+
+    .links{
+      margin-right: 0px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      align-items: center;
+      top: 70px;
+      gap: 10px;
+      left: 0;
+      right: 0;
+      background: rgb(25, 25, 25);
+      transform: translateY(-150%);
+      transition: 0.3s;
+
+    }
+
+    .links.absolute {
+      opacity: 1;
+      transform: translateY(0%);
+      transition: 0.3s;
+  }
+
+    a{
+      display: flex;
+      flex-direction: column;
+    }
+
+    #burger{
+      display: block;
+      cursor: pointer;
+      transition: 0.3s;
+      z-index: 2;
+    }
+  
+  }
+}
+
+// INTRO MEDIA  SECTION 2
+
+#intro{  
+
     .main{
       flex-direction: column;
-      margin: 50px 30px;
+      justify-content: center;
+      align-items: center;
+      margin: 50px;
         
       article{
-        width: 90%;
-        // margin: 50px;
+        width: auto;
         justify-content: center;
         align-items: center;
   
           img{
-            // width: 150px;
             display: none;
         }
     }
- }
-}
+    
+    .tryIt{
+      width: 280px;
+      height: 450px;
 
-// TABS MEDIA
+      h3{
+        font-size: 1em;
+      }
+
+      form{
+        h5{
+          font-size: 0.95em;
+        }
+       }
+     }
+    }
+  }
+
+#social{
+        
+  .main{
+    max-width: 1500px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+
+  article{
+    max-width: 500px;
+    
+    p{
+      display: none; //MEDIA
+    }
+  }
+  .icons{
+    margin-left: 20px;
+  }
+  }
+
+}
 
 #features{
     .main{
@@ -35,80 +124,22 @@
 
           button{
             height: 40px;
-            width: 100px;
-            // background: rgb(163, 113, 105);
-            // background: red;
-            // color: white;
-            // border: none;
-            // cursor: pointer;
-            // box-shadow: 2px 2px 4px 0px rgb(83, 58, 54);
-      
-              p{
+            width: 80px;
+
+            p{
                 transform: rotate(0deg);
-                // font-size: 0.8em;
               }
           }
       }
   
- 
-    //     .pics{
-    //       display: grid;
-    //       gap: 15px;
-    //       grid-template-columns: repeat(2, 1fr);
-    //       grid-template-rows: repeat(2, 1fr);
-    //   }
-      
-    //   .pic{
-    //     background: white;
-    //     min-width: 150px;
-    //     min-height: 150px;
-    //     box-shadow: 0px 1px 6px 0px rgb(83, 58, 54);
-    //     position: relative;
-  
-    //     &:hover::before {
-    //       content: "Explore";
-    //       display: flex;
-    //       justify-content: center;
-    //       align-items: center;
-    //       position: absolute;
-    //       width: 100%;
-    //       height: 100%;
-    //       background: rgb(226, 120, 102, 0.7);
-    //     }
-    //         &:nth-of-type(1){
-    //           grid-row: span 1;
-    //           grid-column: span 1;
-    //           background: url(../images/plant.png);
-    //           background-size: cover;
-    //         }
-  
-    //         &:nth-of-type(2){
-    //           grid-row: span 1;
-    //           grid-column: span 1;
-    //           background: url(../images/veggie.png);
-    //           background-size: cover;
-    //         }
-            
-    //         &:nth-of-type(3){
-    //           grid-row: span 1;
-    //           grid-column: span 2;
-    //           background: url(../images/stairs.png);
-    //           background-size: cover;
-    //           }
-    //   }
+        .pics{
+          gap: 5px;
+      }
     }
-
-
   }
 
-// BLACK MEDIA
 #about{
     min-height: 500px;
-    background: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   
     .main{
       margin: 20px;
@@ -116,7 +147,6 @@
       img{
         display: none;
       }
-      
   
       article{
         margin: 20px;    
@@ -129,76 +159,130 @@
   }
 
   #about-awesome{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     margin: 40px;
-  
       
     hr{
       width: 50%;
-    //   border: none;
-    //   height: 2px;
-    //   background: var(--color-orange)
     }
-
-    // p{
-    //   @include text-style();
-    //   color: var(--color-text-grey);
-    // }
   
     .benefits{
       flex-direction: column;
       gap: 20px;
-    //   justify-content: center;
-    //   margin-top: 30px;
-  
-      .benefit{
-        width: 250px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-  
-        p{
-          @include text-style();
-          color: var(--color-text-grey)
-        }
-  
-        .icon{
-          display: flex;
-          justify-content: center;
-  
-          i{
-            width: 50px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: var(--color-orange);
-            border: 1px solid var(--color-orange);
-            border-radius: 100%;
-          }
-        }
-  
-        h4{
-          @include text-names()
-        }
-      }
     }
   }
 
 
+  #pricing{
+    padding: 50px;
+    text-align: center;
+  
+    h1{
+      @include heading-white()
+    }
+  
+    hr{
+      width: 200px;
+    }
+    
+    .pricelist{
+      flex-direction: column;
+      align-items: center;
+      margin: 0px;
+    }
+  }
 
 
+  #reviews{
+  padding: 50px;
+  
+    h1{
+      text-align: center;
+    }
 
-//   BAIGIASI PIRMA MEDIA
+    hr{
+    width: 200px;
+    }
+    
+    .swiper {
+      width: 250px;
+      height: 670px;
+    }
+  
+    .slide{
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+  
+      .feedback-1{
+        width: 235px;
+        
+        p{
+        font-size: 0.8em;
+        
+          &::after{
+            content: "";
+            border: 10px solid transparent;
+            border-top-color: $blue;
+          }
+        }
+        .person{
+          display: flex;
+          align-items: center;
+          margin-top: 15px;
+    
+          img{
+            width: 50px;
+            height: 50px;
+        }
+      }
+    }
+  }
+}
+
+  #contact{
+    background: $orange;
+    min-height: 480px;
+    padding: 50px;
+
+      p{
+        text-align: center
+      }
+
+      form{
+        width: 280px;
+  
+        #field{
+          width: 230px;
+        }
+  
+        .persontype{
+          display: flex;
+          gap: 10px;
+      }
+  }
+  }
+
+  footer{
+      .main{
+        margin: 50px;
+        gap: 10px;
+        flex-direction: column;    
+      }
+
+      p{
+        font-size: 0.7em;
+      }
+
+    }
+
 }
 
 
+//   BAIGIASI PIRMA MEDIA
 
-@media (min-width: 759px) and (max-width: 1090px){
+
+
+
+@media (min-width: 759px) and (max-width: 1100px){
     
 }

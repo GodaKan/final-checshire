@@ -1,6 +1,6 @@
 #pricing{
     @include flex-colum();
-    background: var(--color-blue);
+    background: $blue;
     color: white;
     gap: 15px;
     min-height: 700px;
@@ -13,7 +13,7 @@
       width: 50px;
       border: none;
       height: 2px;
-      background: var(--color-green)
+      background: $green;
     }
   
     p{
@@ -29,7 +29,7 @@
       .basket{
         .plan{
           @include flex-colum();
-          background: var(--color-text-black);
+          background: $black-text;
           gap: 10px;
           padding: 10px;
           border-radius: 10px 10px 0 0;
@@ -48,7 +48,7 @@
           }
           p{
             @include text-style();
-            color: var(--color-text-grey)
+            color: $grey-text;
           }
         }
   
@@ -58,9 +58,9 @@
           text-align: center;
           line-height: 30px;
           background: white;
-          color: var(--color-text-grey);
+          color: $grey-text;
           border-radius: 0 0 5px 5px;
-          border-top: 4px solid var(--color-green);
+          border-top: 4px solid $green;
         }
   
         li{
@@ -74,7 +74,7 @@
         }
   
         #popular{
-          background: var(--color-green);
+          background: $green;
           color: white;
           }
   

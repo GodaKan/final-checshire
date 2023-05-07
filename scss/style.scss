@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
-:root {
-  --color-green: #41D395;
-  --color-orange: #e27866;
-  --color-blue: #6696E2;
-  --color-light-green: #8edcbc;
-  --color-heading-black: #1C1C1C;
-  --color-text-black: #333333;
-  --color-text-grey: #86878B;
-}
+// :root {
+//   --color-green: #41D395;
+//   --color-orange: #e27866;
+//   --color-blue: #6696E2;
+//   --color-light-green: #8edcbc;
+//   --color-heading-black: #1C1C1C;
+//   --color-text-black: #333333;
+//   --color-text-grey: #86878B;
+// }
+
+$green:  #41D395;
+$orange:  #e27866;
+$blue: #6696E2;
+$heading-black:  #1C1C1C;
+$grey-text:  #86878B;
+$black-text: #333333;
 
 @mixin heading-black {
-  color: var(--color-heading-black);
+  color: $heading-black;
   font-size: 1.5em;
   font-weight: 500;
 }
@@ -77,11 +84,14 @@ html {
 // JAVA Animations
     .articlesAnimation{
       opacity: 1 !important;
-      transform: translateY(0);
       transition: 0.3s;
      }
     
      .selected{
-      background: var(--color-orange) !important;
+      background: $orange !important;
       transition: 0.3s;
+    }
+
+    .rotate{
+      transform: rotateZ(-90deg) !important;
     }

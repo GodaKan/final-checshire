@@ -39,14 +39,14 @@
           width: 200px;
           border: none;
           height: 2px;
-          background: var(--color-orange);
+          background: $orange;
         }
 
         .prg{
           display: flex;
   
           .icon{
-            background: var(--color-orange);
+            background: $orange;
             width: 40px;
             height: 40px;
             display: flex;
