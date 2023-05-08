@@ -1,13 +1,17 @@
 #social{
-        
+  display: flex;
+  justify-content: center;
+  align-items: center;
     .main{
       max-width: 1500px;
+      width: 100%;
       margin: 25px 150px;
       display: flex;
       justify-content: space-between;
+      gap: 100px;
   
     article{
-      max-width: 500px;
+      // max-width: 500px;
       
       p{
         @include text-style
@@ -19,7 +23,7 @@
       align-items: center;
       width: 50%;
       max-width: 400px;
-      margin-left: 50px;
+      // margin-left: 50px;
 
       a {
         color: $orange;

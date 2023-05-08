@@ -1,5 +1,6 @@
 "use strict"
 
+// TABS
 const articles = document.getElementsByClassName("article")
 const buttons = document.getElementsByClassName("tabBtn")
 
@@ -17,16 +18,18 @@ function showTab(evt, id) {
     }
 
     document.getElementById(id).style.display = "block"
-    // NEVEIKIA ANIMACIJA
     document.querySelector(".articles").classList.remove("articlesAnimation")
     
-    // setTimeout(function(){
-    //     document.querySelector(".articles").classList.add("articlesAnimation")
-    // },100)
+    setTimeout(function(){
+        document.querySelector(".articles").classList.add("articlesAnimation")
+    },100)
 
     evt.currentTarget.classList.add("selected")
 
 }
+
+
+// BURGER
 
 const burger = document.getElementById("burger")
 const links = document.querySelector(".links")

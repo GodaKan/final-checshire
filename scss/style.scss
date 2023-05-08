@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
-// :root {
-//   --color-green: #41D395;
-//   --color-orange: #e27866;
-//   --color-blue: #6696E2;
-//   --color-light-green: #8edcbc;
-//   --color-heading-black: #1C1C1C;
-//   --color-text-black: #333333;
-//   --color-text-grey: #86878B;
-// }
-
 $green:  #41D395;
 $orange:  #e27866;
 $blue: #6696E2;
@@ -19,24 +9,24 @@ $black-text: #333333;
 
 @mixin heading-black {
   color: $heading-black;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 500;
 }
 
 @mixin heading-white {
   color: white;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 500;
 }
 
 @mixin text-style {
   font-weight: 300;
-  font-size: 0.8em;
+  // font-size: 0.8em;
 }
 
 @mixin text-names{
   font-weight: 400;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 @mixin flex-colum{

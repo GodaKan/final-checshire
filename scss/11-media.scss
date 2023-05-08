@@ -54,8 +54,6 @@ header{
   }
 }
 
-// INTRO MEDIA  SECTION 2
-
 #intro{  
 
     .main{
@@ -68,7 +66,10 @@ header{
         width: auto;
         justify-content: center;
         align-items: center;
-  
+
+        h1{
+          font-size: 1.5em;
+        }
           img{
             display: none;
         }
@@ -131,9 +132,21 @@ header{
               }
           }
       }
-  
+        .article{
+          h1{
+            font-size: 1.5em;
+          }
+          p{
+            font-size: 0.7em;
+          }
+        }
         .pics{
           gap: 5px;
+
+          .pic{
+            min-width: 120px;
+            min-height: 120px;
+          }
       }
     }
   }
@@ -150,7 +163,9 @@ header{
   
       article{
         margin: 20px;    
-        
+        h2{
+          font-size: 1.5em;
+        }
         hr{
           width: 80%;
         }      
@@ -160,7 +175,11 @@ header{
 
   #about-awesome{
     margin: 40px;
-      
+    
+    h1{
+      font-size: 1.5em;
+    }
+
     hr{
       width: 50%;
     }
@@ -177,7 +196,7 @@ header{
     text-align: center;
   
     h1{
-      @include heading-white()
+      font-size: 1.5em;
     }
   
     hr{
@@ -197,6 +216,7 @@ header{
   
     h1{
       text-align: center;
+      font-size: 1.5em;
     }
 
     hr{
@@ -243,6 +263,9 @@ header{
     background: $orange;
     min-height: 480px;
     padding: 50px;
+      h1{
+        font-size: 1.5em;
+      }
 
       p{
         text-align: center
@@ -275,14 +298,162 @@ header{
 
     }
 
+
+h1{
+  font-size: 1.5em;
 }
 
 
-//   BAIGIASI PIRMA MEDIA
+}
 
 
+//   TABLET MEDIA
+
+@media (min-width: 761px) and (max-width: 1100px){
+
+  header{
+  
+      img{
+        margin-left: 50px;
+      }
+  
+    nav{
+      .links{
+        margin-right: 50px;
+      }
+    }
+  }
+
+  #social{
+        
+    .main{
+      max-width: 1500px;
+      margin: 30px 70px;
+      display: flex;
+      justify-content: space-between;
+  
+    article{
+      max-width: 500px;
+      
+      p{
+        display: none; //MEDIA
+      }
+    }
+    .icons{
+      margin-left: 20px;
+    }
+    }
+  
+  }
+
+  #intro{  
+
+    .main{
+      margin: 70px;
+      gap: 40px;
+    }
+  }
+
+  #features{
+    .main{
+     margin: 70px;
+     
+     .article{
+        h1{
+          font-size: 1.5em;
+        }
+      }
+        .pics{
+          .pic{
+            min-width: 120px;
+            min-height: 120px;
+          }
+      }
+    }
+  }
+
+  #about{
+    min-height: 500px;
+  
+    .main{
+      margin: 20px;
+      gap: 40px;
+
+      img{
+        min-width: 120px;
+      }
+
+      article{
+        margin: 20px;   
 
 
-@media (min-width: 759px) and (max-width: 1100px){
+        hr{
+          width: 80%;
+        }      
+      }
+    } 
+  }
+
+  #about-awesome{
+
+    .benefits{
+      gap: 10px;
+    }
+  }
+
+
+  #pricing{
+    padding: 50px;
     
-}
+    li{
+      padding: 3px 15px;
+    }
+  }
+
+  
+  #reviews{
+    padding: 50px;
+    
+      h1{
+        text-align: center;
+      }
+  
+      hr{
+      width: 200px;
+      }
+      
+      .swiper {
+        width: 350px;
+        height: 670px;
+      }
+    
+      .slide{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    
+        .feedback-1{
+          width: 235px;
+          
+          p{
+          font-size: 0.8em;
+          
+            &::after{
+              content: "";
+              border: 10px solid transparent;
+              border-top-color: $blue;
+            }
+          }
+          .person{
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+      
+            img{
+              width: 50px;
+              height: 50px;
+          }
+        }
+      }
+    }
+  }}
